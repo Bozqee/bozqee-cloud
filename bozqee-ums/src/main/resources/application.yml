@@ -1,0 +1,9 @@
+server:
+  port: 4567
+
+spring:
+  profiles:
+    active: dev
+
+#mapper:
+#  style: normal

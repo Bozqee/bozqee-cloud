@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>xyz.bozqee</groupId>
+    <artifactId>bozqee-cloud</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>bozqee-api</module>
+        <module>bozqee-passport</module>
+        <module>bozqee-gateway</module>
+        <module>bozqee-oss</module>
+        <module>bozqee-storage</module>
+        <module>bozqee-common</module>
+        <module>bozqee-ums</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <bozqee.version>1.0.0</bozqee.version>
+
+        <spring-boot.version>2.7.2</spring-boot.version>
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-cloud-alibaba.version>2021.0.1.0</spring-cloud-alibaba.version>
+        <alibaba.nacos.version>2.0.4</alibaba.nacos.version>
+        <alibaba.seata.version>1.5.1</alibaba.seata.version>
+        <tk.mybatis>4.2.1</tk.mybatis>
+        <druid.version>1.2.11</druid.version>
+        <javax.persistence.version>1.0</javax.persistence.version>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringCloud 微服务 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud Alibaba 微服务 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- Alibaba Nacos 配置 -->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${alibaba.nacos.version}</version>
+            </dependency>
+
+            <!-- Alibaba Seata 配置 -->
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-spring-boot-starter</artifactId>
+                <version>${alibaba.seata.version}</version>
+            </dependency>
+
+            <!-- SpringBoot 依赖配置 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${tk.mybatis}</version>
+            </dependency>
+
+            <!-- Druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>persistence-api</artifactId>
+                <optional>true</optional>
+                <version>${javax.persistence.version}</version>
+            </dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <dependency>
+                <groupId>xyz.bozqee</groupId>
+                <artifactId>bozqee-common-utils</artifactId>
+                <version>${bozqee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xyz.bozqee</groupId>
+                <artifactId>bozqee-common-core</artifactId>
+                <version>${bozqee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xyz.bozqee</groupId>
+                <artifactId>bozqee-common-datasource</artifactId>
+                <version>${bozqee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xyz.bozqee</groupId>
+                <artifactId>api-ums</artifactId>
+                <version>${bozqee.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
