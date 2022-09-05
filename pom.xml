@@ -32,7 +32,7 @@
         <tk.mybatis>4.2.1</tk.mybatis>
         <druid.version>1.2.11</druid.version>
         <javax.persistence.version>1.0</javax.persistence.version>
-
+        <fastjson.version>2.0.12</fastjson.version>
     </properties>
 
 
@@ -100,8 +100,12 @@
             </dependency>
 
 
-
-
+            <!-- JSON 解析器和生成器 -->
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
 
 
 
@@ -128,6 +132,12 @@
             <dependency>
                 <groupId>xyz.bozqee</groupId>
                 <artifactId>bozqee-common-datasource</artifactId>
+                <version>${bozqee.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xyz.bozqee</groupId>
+                <artifactId>bozqee-common-cache</artifactId>
                 <version>${bozqee.version}</version>
             </dependency>
 

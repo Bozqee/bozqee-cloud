@@ -33,6 +33,10 @@
             <artifactId>bozqee-common-datasource</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>xyz.bozqee</groupId>
+            <artifactId>bozqee-common-cache</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>xyz.bozqee</groupId>

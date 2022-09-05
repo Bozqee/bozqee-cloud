@@ -13,10 +13,15 @@ public class SysUserServiceImpl implements SysUserService {
     private SysBindingService sysBindingService;
 
     @Override
-    public SysUser findByBinding(String bindValue) {
+    public SysUser findByLoginUsername(String username) {
         // sysBindingService.findByBindValue()
 
         return sysUserDao.selectOne(null);
+    }
+
+    @Override
+    public int insertSysUser(SysUser sysUser) {
+        return 0;
     }
 
 }

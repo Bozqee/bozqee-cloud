@@ -8,7 +8,7 @@ import xyz.bozqee.common.core.exception.assertion.BusinessExceptionAssert;
 @AllArgsConstructor
 public enum BusinessResponseEnum implements BusinessExceptionAssert {
 
-    USER_NOT_FOUND(6001, "未查询到用户信息: {0}"),
+    USER_NOT_FOUND(6001, "用户不存在"),
 
     ;
 
