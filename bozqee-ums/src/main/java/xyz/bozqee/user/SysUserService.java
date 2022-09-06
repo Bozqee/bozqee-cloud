@@ -1,4 +1,6 @@
-package xyz.bozqee.ums.user;
+package xyz.bozqee.user;
+
+import xyz.bozqee.ums.user.SysUser;
 
 public interface SysUserService {
 

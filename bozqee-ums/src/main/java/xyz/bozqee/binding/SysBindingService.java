@@ -1,4 +1,6 @@
-package xyz.bozqee.ums.binding;
+package xyz.bozqee.binding;
+
+import xyz.bozqee.ums.binding.SysBinding;
 
 import java.util.List;
 

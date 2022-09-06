@@ -1,4 +1,4 @@
-package xyz.bozqee.ums.account;
+package xyz.bozqee.account;
 
 import org.springframework.stereotype.Service;
 

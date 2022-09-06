@@ -1,8 +1,9 @@
-package xyz.bozqee.ums.user;
+package xyz.bozqee.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import xyz.bozqee.ums.binding.SysBindingService;
+import xyz.bozqee.binding.SysBindingService;
+import xyz.bozqee.ums.user.SysUser;
 
 @Service
 public class SysUserServiceImpl implements SysUserService {

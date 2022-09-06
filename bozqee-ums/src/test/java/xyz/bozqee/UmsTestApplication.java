@@ -1,4 +1,4 @@
-package xyz.bozqee.ums;
+package xyz.bozqee;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

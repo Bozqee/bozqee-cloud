@@ -1,10 +1,11 @@
-package xyz.bozqee.ums.user;
+package xyz.bozqee.user;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import xyz.bozqee.UmsTestApplication;
 import xyz.bozqee.common.cache.CacheService;
 import xyz.bozqee.common.core.constant.enums.BusinessResponseEnum;
-import xyz.bozqee.ums.UmsTestApplication;
+import xyz.bozqee.ums.user.SysUser;
 
 public class UserServiceTest extends UmsTestApplication {
 
